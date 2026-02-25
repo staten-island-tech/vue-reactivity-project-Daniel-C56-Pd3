@@ -9,7 +9,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import SmoothieCard from 'src/Views/SmoothieCard.vue';
+import SmoothieCard from '@/Views/SmoothieCard.vue';
 
 const ingredients = ref([
   {name: 'Banana', quantity: 1, calories: 105, price: 0.50},
