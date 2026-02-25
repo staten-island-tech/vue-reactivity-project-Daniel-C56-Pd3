@@ -1,8 +1,6 @@
 <template>
     <div>
-       <!--  <smoothiecard v-for="value in source"/>
-        <smoothiecup :ingredients="ingredients"/>
-        <total :ingredients/>> -->
+        <SmoothieCard v-for="ingredient in ingredients":key="ingredient.name":ingredient="ingredient"/>SmoothieCard>
         <h2>TEST</h2>
     </div>
 </template>
@@ -11,6 +9,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import SmoothieCard from 'src/Views/SmoothieCard.vue';
 
 const ingredients = ref([
   {name: 'Banana', quantity: 1, calories: 105, price: 0.50},
