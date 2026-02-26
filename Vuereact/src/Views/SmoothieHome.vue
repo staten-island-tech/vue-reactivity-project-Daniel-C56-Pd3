@@ -1,7 +1,6 @@
 <template>
     <div>
         <SmoothieCard v-for="ingredient in ingredients":key="ingredient.name":ingredient="ingredient"/>SmoothieCard>
-        <h2>TEST</h2>
     </div>
 </template>
 
@@ -12,9 +11,9 @@ import { ref } from 'vue'
 import SmoothieCard from '@/Views/SmoothieCard.vue';
 
 const ingredients = ref([
-  {name: 'Banana', quantity: 1, calories: 105, price: 0.50},
-  {name: 'Strawberries',quantity: 150,  calories: 48, price: 2.00},
-  {name: 'Almond Milk',quantity: 250,  calories: 30, price: 1.20},
+  {name: 'Banana', quantity: 1, calories: 105, price: 0.50, image:"/"},
+  {name: 'Strawberries',quantity: 150,  calories: 48, price: 2.00, image:"./strawberry.png"},
+  {name: 'Milk',quantity: 250,  calories: 30, price: 1.20, image:"./milk.png"},
   {name: 'Honey', quantity: 1,  calories: 64, price: 0.80}
 ])
 </script>
@@ -22,7 +21,7 @@ const ingredients = ref([
 
 <style scoped>
 div {
-  padding: 16px;
+  padding: 5px;
 }
 
 
@@ -49,4 +48,5 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
+
 </style>
