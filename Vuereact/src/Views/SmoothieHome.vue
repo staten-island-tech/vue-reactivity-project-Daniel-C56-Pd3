@@ -27,7 +27,7 @@ div {
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .container {
   display: flex;
@@ -39,13 +39,10 @@ h1 {
 }
 .card {
   border: 1px solid #ccc;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
   width: 300px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
