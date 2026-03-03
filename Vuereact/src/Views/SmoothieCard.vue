@@ -18,6 +18,7 @@ defineProps({
 
 <style scoped>
   .card {
+    left: 50%;
     max-width: 150px ;
     max-height: 200px ;
     margin: 15px 0;
