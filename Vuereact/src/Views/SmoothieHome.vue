@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
       <SmoothieCard v-for="ingredient in ingredients":key="ingredient.name":ingredient="ingredient">
         <button>Put In Blender</button>
       </SmoothieCard>
@@ -26,9 +26,10 @@ const ingredients = ref([
 
 <style scoped>
 .container {
-  width: 80vw;
-  justify-content: space-around;
+  width: 50%;
+  justify-content: flex-end;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
 }
 </style>
