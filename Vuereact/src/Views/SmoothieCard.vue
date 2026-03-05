@@ -3,7 +3,7 @@
     <h2>{{ ingredient.name }}</h2>
     <h3>{{ ingredient.price }}</h3>
     <img :src="ingredient.image">
-    <button>Put In Blender</button>
+    <slot></slot>
   </div>
 </template>
 
