@@ -13,23 +13,42 @@
 import { reactive, ref } from 'vue'
 import SmoothieCard from '@/Views/SmoothieCard.vue';
 
-let addstuff = reactive({ingredients1 : null, ingredients2 : null, ingredients3: null, ingredients4:null })
+let addstuff = reactive({ fruit: null,  : null, : null, :null })
 function add(ingredient){
-  //addstuff[ingredient.name] = ingredient.image
-  console.log(ingredient)
+  addstuff[ingredient.name] = ingredient.image
 }
 
 const ingredients = ref([
-  {name: 'Banana',  price: 0.50, image:"/banana.png"},
-  {name: 'Strawberries',  price: 2.00, image:"./strawberry.png"},
-  {name: 'Milk',  price: 1.20, image:"./milk.png"},
-  {name: 'Honey', price: 0.80},
-  { name: 'Blueberries',  price: 2.50, image: "./blueberries.png" },
-  { name: 'Greek Yogurt',   price: 1.50, image: "./yogurt.png" },
-  { name: 'Oats',  price: 0.40, image: "./oats.png" },
-  { name: 'Almond Butter', alories: 98, price: 1.10, image: "./almond-butter.png" },
-  { name: 'Chia Seeds', price: 0.60, image: "./chia-seeds.png" },
-  { name: 'Spinach', price: 0.90, image: "./spinach.png" },
+  { name: "Banana", category: "fruit", image: "./banana.png" },
+  { name: "Strawberries", category: "fruit", image: "./strawberry.png" },
+  { name: "Blueberries", category: "fruit", image: "./blueberries.png" },
+  { name: "Raspberries", category: "fruit", image: "./raspberries.png" },
+  { name: "Blackberries", category: "fruit", image: "./blackberries.png" },
+  { name: "Mango", category: "fruit", image: "./mango.png" },
+  { name: "Pineapple", category: "fruit", image: "./pineapple.png" },
+  { name: "Apple", category: "fruit", image: "./apple.png" },
+  { name: "Peach", category: "fruit", image: "./peach.png" },
+  { name: "Avocado", category: "fruit", image: "./avocado.png" },
+  { name: "Milk", category: "dairy", image: "./milk.png" },
+  { name: "Greek Yogurt", category: "dairy", image: "./yogurt.png" },
+  { name: "Almond Milk", category: "dairy", image: "./almond-milk.png" },
+  { name: "Coconut Milk", category: "dairy", image: "./coconut-milk.png" },
+  { name: "Oats", category: "grains", image: "./oats.png" },
+  { name: "Granola", category: "grains", image: "./granola.png" },
+  { name: "Honey", category: "sweetener", image: "./honey.png" },
+  { name: "Maple Syrup", category: "sweetener", image: "./maple-syrup.png" },
+  { name: "Dates", category: "sweetener", image: "./dates.png" },
+  { name: "Almond Butter", category: "butter", image: "./almond-butter.png" },
+  { name: "Peanut Butter", category: "butter", image: "./peanut-butter.png" },
+  { name: "Cashew Butter", category: "butter", image: "./cashew-butter.png" },
+  { name: "Chia Seeds", category: "seeds", image: "./chia-seeds.png" },
+  { name: "Flax Seeds", category: "seeds", image: "./flax-seeds.png" },
+  { name: "Pumpkin Seeds", category: "seeds", image: "./pumpkin-seeds.png" },
+  { name: "Spinach", category: "greens", image: "./spinach.png" },
+  { name: "Kale", category: "greens", image: "./kale.png" },
+  { name: "Coconut Flakes", category: "topping", image: "./coconut-flakes.png" },
+  { name: "Dark Chocolate Chips", category: "topping", image: "./chocolate-chips.png" },
+  { name: "Protein Powder", category: "protein", image: "./protein-powder.png" }
 ])
 </script>
 
