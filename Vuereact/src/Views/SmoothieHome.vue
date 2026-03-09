@@ -1,11 +1,19 @@
 <template>
-    <div class="container">
-      <SmoothieCard v-for="ingredient in ingredients":key="ingredient.name":ingredient="ingredient">
-        <button @click="add(ingredient)">Put In Blender</button>
-      </SmoothieCard>
-      <div>
-        
+  <div class="container">
+    <h1>Smoothie Ingredients</h1>
+    <div class="blender">
+      <h2>Your Blender</h2>
+      <div class="blender-list">
+        <span v-for="(value, key) in blenderIngredients" :key="key" class="blender-item">
+          {{ key }}
+        </span>
       </div>
+    </div>
+      <SmoothieCard v-for="ingredient in ingredients" :key="ingredient.name" :ingredient="ingredient">
+        <button @click="addToBlender(ingredient)" class="btn">
+          Put In Blender
+        </button>
+      </SmoothieCard>
     </div>
 </template>
 
@@ -13,9 +21,10 @@
 import { reactive, ref } from 'vue'
 import SmoothieCard from '@/Views/SmoothieCard.vue';
 
-let addstuff = reactive({ fruit: null,  : null, : null, :null })
-function add(ingredient){
-  addstuff[ingredient.name] = ingredient.image
+const blenderIngredients = reactive({})
+
+function addToBlender(ingredient) {
+  blenderIngredients[ingredient.name] = ingredient.image
 }
 
 const ingredients = ref([
