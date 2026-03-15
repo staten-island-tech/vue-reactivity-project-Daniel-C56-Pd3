@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import SmoothieHome from '@/Views/SmoothieHome.vue';
-import SmoothieCard from '@/Views/SmoothieCard.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import SmoothieHome from '@/Views/SmoothieHome.vue'
+import SmoothieCard from '@/Views/SmoothieCard.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
