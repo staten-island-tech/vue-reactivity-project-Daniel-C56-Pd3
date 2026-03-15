@@ -1,16 +1,16 @@
 <template>
-    <div class="blender-container">
+    <div class="container">
       <h2>Your Blender</h2>
-      <div class="blender-list">
+      <div class="blender">
         <span v-for="(value, key) in blenderIngredients" :key="key" class="blender-item">
           {{ key }}
         </span>
       </div>
     </div>
 
-    <div class="cards-container">
+    <div class="container">
       <h1>Smoothie Ingredients</h1>
-      <div class="card-grid">
+      <div class="card">
         <SmoothieCard v-for="ingredient in ingredients" :key="ingredient.name" :ingredient="ingredient">
           <button @click="addToBlender(ingredient)" class="btn">
             Put In Blender
