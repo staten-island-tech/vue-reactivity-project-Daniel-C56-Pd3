@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <h1>Smoothie Ingredients</h1>
-    <div class="blender">
+    <div class="blender-container">
       <h2>Your Blender</h2>
       <div class="blender-list">
         <span v-for="(value, key) in blenderIngredients" :key="key" class="blender-item">
@@ -9,11 +7,16 @@
         </span>
       </div>
     </div>
-      <SmoothieCard v-for="ingredient in ingredients" :key="ingredient.name" :ingredient="ingredient">
-        <button @click="addToBlender(ingredient)" class="btn">
-          Put In Blender
-        </button>
-      </SmoothieCard>
+
+    <div class="cards-container">
+      <h1>Smoothie Ingredients</h1>
+      <div class="card-grid">
+        <SmoothieCard v-for="ingredient in ingredients" :key="ingredient.name" :ingredient="ingredient">
+          <button @click="addToBlender(ingredient)" class="btn">
+            Put In Blender
+          </button>
+        </SmoothieCard>
+      </div>
     </div>
 </template>
 
