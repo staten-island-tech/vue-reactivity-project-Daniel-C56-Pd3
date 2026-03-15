@@ -22,7 +22,7 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
-import SmoothieCard from '@/Views/SmoothieCard.vue';
+import SmoothieCard from '@/vues/SmoothieCard.vue';
 
 const blenderIngredients = reactive({})
 
