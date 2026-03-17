@@ -41,26 +41,7 @@ const ingredients = ref([
   { name: "Apple", category: "fruit", image: "./apple.png" },
   { name: "Peach", category: "fruit", image: "./peach.png" },
   { name: "Avocado", category: "fruit", image: "./avocado.png" },
-  { name: "Milk", category: "dairy", image: "./milk.png" },
-  { name: "Greek Yogurt", category: "dairy", image: "./yogurt.png" },
-  { name: "Almond Milk", category: "dairy", image: "./almond-milk.png" },
-  { name: "Coconut Milk", category: "dairy", image: "./coconut-milk.png" },
-  { name: "Oats", category: "grains", image: "./oats.png" },
-  { name: "Granola", category: "grains", image: "./granola.png" },
-  { name: "Honey", category: "sweetener", image: "./honey.png" },
-  { name: "Maple Syrup", category: "sweetener", image: "./maple-syrup.png" },
-  { name: "Dates", category: "sweetener", image: "./dates.png" },
-  { name: "Almond Butter", category: "butter", image: "./almond-butter.png" },
-  { name: "Peanut Butter", category: "butter", image: "./peanut-butter.png" },
-  { name: "Cashew Butter", category: "butter", image: "./cashew-butter.png" },
-  { name: "Chia Seeds", category: "seeds", image: "./chia-seeds.png" },
-  { name: "Flax Seeds", category: "seeds", image: "./flax-seeds.png" },
-  { name: "Pumpkin Seeds", category: "seeds", image: "./pumpkin-seeds.png" },
-  { name: "Spinach", category: "greens", image: "./spinach.png" },
-  { name: "Kale", category: "greens", image: "./kale.png" },
-  { name: "Coconut Flakes", category: "topping", image: "./coconut-flakes.png" },
-  { name: "Dark Chocolate Chips", category: "topping", image: "./chocolate-chips.png" },
-  { name: "Protein Powder", category: "protein", image: "./protein-powder.png" }
+  { name: "Milk", category: "dairy", image: "./milk.png" }
 ])
 </script>
 
