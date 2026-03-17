@@ -40,7 +40,6 @@ const ingredients = ref([
   { name: "Pineapple", category: "fruit", image: "./pineapple.png" },
   { name: "Apple", category: "fruit", image: "./apple.png" },
   { name: "Peach", category: "fruit", image: "./peach.png" },
-  { name: "Avocado", category: "fruit", image: "./avocado.png" },
   { name: "Milk", category: "dairy", image: "./milk.png" }
 ])
 </script>
@@ -51,6 +50,5 @@ const ingredients = ref([
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 </style>
